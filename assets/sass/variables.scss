@@ -1,0 +1,77 @@
+// =======================
+// COLORS
+// =======================
+
+$fondo-del-fondo-negro: linear-gradient(120deg, #404040 3%, #303030 97%);
+$bg-gradient-jet: linear-gradient(135deg, rgba(46, 46, 46, 0.251) 0%,
+        rgba(28, 28, 28, 0) 100%), #2b2b2b;
+
+$bg-gradient-blue-1: linear-gradient(115deg,
+        #60a5fa 0%,
+        rgba(96, 165, 250, 0) 50%);
+
+$bg-gradient-blue-2: linear-gradient(135deg,
+        rgba(59, 130, 246, 0.25) 0%,
+        rgba(37, 99, 235, 0) 60%), #2b2b2b;
+
+$text-gradient-blue: linear-gradient(110deg,
+        #60a5fa,
+        #3b82f6);
+
+$border-gradient-onyx: linear-gradient(135deg,
+        #404040 0%,
+        rgba(64, 64, 64, 0) 50%);
+
+
+// Solid colors
+$jet: #383838;
+$onyx: #2c2c2c;
+$eerie-black-1: #2b2b2b;
+$fondo-cards2: #292929;
+$fondo-principal: #121212;
+$white-1: #ffffff;
+$white-2: #fafafa;
+$orange-yellow-crayola: #ffd966;
+$vegas-gold: #c9a84f;
+$light-gray: #d6d6d6;
+$light-gray-70: rgba(214, 214, 214, 0.7);
+$bittersweet-shimmer: #b54a4a;
+
+$blue: linear-gradient(90deg, rgba(0, 63, 97, 1) 0%, rgba(8, 106, 204, 1) 50%, rgba(0, 212, 255, 1) 100%);
+$primary-blue: #3b82f6;
+$blue-light: #60a5fa;
+$blue-dark: #1e3a8a;
+
+
+// =======================
+// TYPOGRAPHY
+// =======================
+
+// Font family
+$ff-poppins: 'Poppins', sans-serif;
+
+// Font sizes
+$fs-1: 0.7rem;
+$fs-2: 1.5rem;
+$fs-3: 2rem;
+$fs-4: 2.5rem;
+$fs-5: 3rem;
+$fs-6: 3.5rem;
+$fs-7: 4rem;
+
+// Font weights
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+
+
+// =======================
+// SHADOWS
+// =======================
+
+$shadow-1: -4px 8px 24px rgba(0, 0, 0, 0.25);
+$shadow-2: 0 16px 30px rgba(0, 0, 0, 0.25);
+$shadow-3: 0 16px 40px rgba(0, 0, 0, 0.25);
+$shadow-4: 0 25px 50px rgba(0, 0, 0, 0.15);
+$shadow-5: 0 24px 80px rgba(0, 0, 0, 0.25);
