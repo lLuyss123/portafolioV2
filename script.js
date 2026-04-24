@@ -2,7 +2,7 @@ const about = document.querySelector(".nav_about");
 //const resume=document.querySelector(".resume");
 const pets = document.querySelector(".nav_pets");
 const titulo = document.querySelector("#title_nav");
-const proyectos = document.querySelector(".proyects")
+const about2 = document.querySelector(".about2")
 const seccion_about = document.querySelector(".about_me");
 const seccion_pets = document.querySelector(".pets");
 
@@ -20,7 +20,7 @@ function fAct_Des(info) {
         about.classList.add("active");
         //resume.classList.remove("active")
         pets.classList.remove("active");
-        proyectos.classList.add("active");
+        about2.classList.add("active");
         titulo.textContent = "About Me";
     } else if (info == "resume") {
         about.classList.remove("active");
@@ -34,7 +34,7 @@ function fAct_Des(info) {
         titulo.textContent = "My Pets";
         seccion_pets.classList.add("active");
         seccion_about.classList.remove("active");
-        proyectos.classList.remove("active");
+        about2.classList.remove("active");
     }
 
 }

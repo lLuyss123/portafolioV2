@@ -174,17 +174,17 @@ main nav ol li.active {
   color: #3b82f6;
   font-weight: bold;
 }
-main .proyects {
+main .about2 {
   display: none;
   color: white;
 }
-main .proyects.active {
+main .about2.active {
   display: block;
 }
-main .proyects {
+main .about2 {
   padding: 15px;
 }
-main .proyects .all_proyects {
+main .about2 .all_about2 {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -192,7 +192,7 @@ main .proyects .all_proyects {
   gap: 20px;
   align-self: center;
 }
-main .proyects .all_proyects figure {
+main .about2 .all_about2 figure {
   padding: 10px;
   background: linear-gradient(135deg, #404040 0%, rgba(64, 64, 64, 0) 50%);
   padding-top: 30px;
@@ -205,7 +205,7 @@ main .proyects .all_proyects figure {
   position: relative;
   z-index: 1;
 }
-main .proyects .all_proyects figure::before {
+main .about2 .all_about2 figure::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -217,20 +217,20 @@ main .proyects .all_proyects figure::before {
   inset: 1px;
   z-index: -1;
 }
-main .proyects .all_proyects figure img {
+main .about2 .all_about2 figure img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
-main .proyects .all_proyects figure article {
+main .about2 .all_about2 figure article {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-main .proyects .all_proyects figure article h2 {
+main .about2 .all_about2 figure article h2 {
   font-size: 1.1rem;
 }
-main .proyects .all_proyects figure article p {
+main .about2 .all_about2 figure article p {
   font-size: 0.7rem;
 }
 main .about_me {
