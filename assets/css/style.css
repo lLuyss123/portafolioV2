@@ -175,6 +175,12 @@ main nav ol li.active {
   font-weight: bold;
 }
 main .proyects {
+  display: none;
+}
+main .proyects.active {
+  display: block;
+}
+main .proyects {
   padding: 15px;
 }
 main .proyects .all_proyects {
@@ -187,19 +193,33 @@ main .proyects .all_proyects {
 }
 main .proyects .all_proyects figure {
   padding: 10px;
+  background: linear-gradient(135deg, #404040 0%, rgba(64, 64, 64, 0) 50%);
   padding-top: 30px;
-  background: #292929;
   border-radius: 10px;
-  height: 120px;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   gap: 15px;
   color: white;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+main .proyects .all_proyects figure::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  inset: 1px;
+  z-index: -1;
 }
 main .proyects .all_proyects figure img {
-  height: auto;
   width: 40px;
-  height: 40;
+  height: 40px;
   object-fit: contain;
 }
 main .proyects .all_proyects figure article {

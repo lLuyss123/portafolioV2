@@ -3,24 +3,25 @@
 // =======================
 
 $fondo-del-fondo-negro: linear-gradient(120deg, #404040 3%, #303030 97%);
-$bg-gradient-jet: linear-gradient(135deg, rgba(46, 46, 46, 0.251) 0%,
-                rgba(28, 28, 28, 0) 100%), #2b2b2b;
+
+
+$bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
 
 $bg-gradient-blue-1: linear-gradient(115deg,
-                #60a5fa 0%,
-                rgba(96, 165, 250, 0) 50%);
+        #60a5fa 0%,
+        rgba(96, 165, 250, 0) 50%);
 
 $bg-gradient-blue-2: linear-gradient(135deg,
-                rgba(59, 130, 246, 0.25) 0%,
-                rgba(37, 99, 235, 0) 60%), #2b2b2b;
+        rgba(59, 130, 246, 0.25) 0%,
+        rgba(37, 99, 235, 0) 60%), #2b2b2b;
 
 $text-gradient-blue: linear-gradient(110deg,
-                #60a5fa,
-                #3b82f6);
+        #60a5fa,
+        #3b82f6);
 
 $border-gradient-onyx: linear-gradient(135deg,
-                #404040 0%,
-                rgba(64, 64, 64, 0) 50%);
+        #404040 0%,
+        rgba(64, 64, 64, 0) 50%);
 
 
 // Solid colors
