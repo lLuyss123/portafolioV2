@@ -188,8 +188,10 @@ main .about_me.active {
   display: block;
 }
 main .pets {
+  padding: 15px;
   display: none;
-  width: 625px;
+  max-width: 625px;
+  width: auto;
 }
 main .pets figure {
   display: grid;
