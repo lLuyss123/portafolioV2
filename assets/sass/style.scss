@@ -10,6 +10,8 @@
    text-decoration: none;
 }
 
+
+
 body {
    //////// ↑    →    ↓    ←
    margin: 70px 250px 40px 250px;
@@ -278,9 +280,119 @@ main {
 
    }
 
-   .proyects{
+   .proyects {
       padding: 10px;
       color: white;
+
+      figure {
+         background: $fondo-cards2;
+         border-radius: 20px;
+         text-align: center;
+
+         img {
+            padding: 20px;
+            max-width: 100%;
+         }
+      }
+   }
+
+
+   .contacts {
+      padding: 10px;
+      color: white;
+
+      form {
+         background: $glass-bg;
+         backdrop-filter: blur(15px);
+         border-radius: 15px;
+         padding: 30px;
+         width: 50%;
+         border: 1px solid rgba($primary, 0.3);
+         box-shadow:
+            0 0 20px rgba($primary, 0.3),
+            0 0 40px rgba($secondary, 0.2);
+         color: $text-light;
+
+         // 🧩 GRID LAYOUT
+         display: grid;
+         grid-template-columns: repeat(2, minmax(0, 1fr));
+         gap: 15px;
+
+         label {
+            font-size: 13px;
+         }
+
+         // 📌 Grupo de campos
+         .field {
+            display: flex;
+            flex-direction: column;
+         }
+
+         // Nombre y correo (automático por grid)
+
+         // Mensaje ocupa toda la fila
+         .full {
+            grid-column: span 2;
+         }
+
+         input,
+         textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            background: $input-bg;
+            color: $text-light;
+            border: 1px solid rgba($primary, 0.3);
+            outline: none;
+            transition: 0.3s;
+
+            &:focus {
+               border: 1px solid $primary;
+               box-shadow: 0 0 10px $primary, 0 0 20px $secondary;
+            }
+         }
+
+         textarea {
+            resize: none;
+         }
+
+         button {
+            grid-column: span 2;
+            margin-top: 10px;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, $primary, $secondary);
+            color: $text-light;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba($primary, 0.5);
+
+            &:hover {
+               transform: scale(1.05);
+               box-shadow:
+                  0 0 20px $primary,
+                  0 0 40px $secondary;
+            }
+         }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    }
 
    .about_me {

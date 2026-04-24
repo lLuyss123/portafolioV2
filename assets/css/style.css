@@ -237,6 +237,78 @@ main .proyects {
   padding: 10px;
   color: white;
 }
+main .proyects figure {
+  background: #292929;
+  border-radius: 20px;
+  text-align: center;
+}
+main .proyects figure img {
+  padding: 20px;
+  max-width: 100%;
+}
+main .contacts {
+  padding: 10px;
+  color: white;
+}
+main .contacts form {
+  background: rgba(20, 20, 40, 0.35);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 30px;
+  width: 50%;
+  border: 1px solid rgba(0, 170, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.3), 0 0 40px rgba(140, 0, 255, 0.2);
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+main .contacts form label {
+  font-size: 13px;
+}
+main .contacts form .field {
+  display: flex;
+  flex-direction: column;
+}
+main .contacts form .full {
+  grid-column: span 2;
+}
+main .contacts form input,
+main .contacts form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: 1px solid rgba(0, 170, 255, 0.3);
+  outline: none;
+  transition: 0.3s;
+}
+main .contacts form input:focus,
+main .contacts form textarea:focus {
+  border: 1px solid #00aaff;
+  box-shadow: 0 0 10px #00aaff, 0 0 20px #8c00ff;
+}
+main .contacts form textarea {
+  resize: none;
+}
+main .contacts form button {
+  grid-column: span 2;
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00aaff, #8c00ff);
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.5);
+}
+main .contacts form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00aaff, 0 0 40px #8c00ff;
+}
 main .about_me {
   display: none;
   width: 100%;
