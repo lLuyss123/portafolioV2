@@ -118,6 +118,8 @@ aside {
                z-index: -1;
                border-radius: 10px;
             }
+
+
          }
 
          .content_email {
@@ -203,6 +205,53 @@ main {
             }
          }
       }
+   }
+
+   .proyects {
+      padding: 15px;
+      .all_proyects {
+         padding: 10px;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         align-items: center;
+         gap: 20px;
+         align-self: center;
+
+         figure {
+            padding: 10px;
+            padding-top: 30px;
+            background: $fondo-cards2;
+            border-radius: 10px;
+            height: 120px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            color: white;
+
+            img {
+               height: auto;
+               width: 40px;
+               height: 40;
+               object-fit: contain;
+            }
+
+            article {
+               display: flex;
+               flex-direction: column;
+               gap: 5px;
+
+               h2 {
+                  font-size: $fs-2;
+               }
+
+               p {
+                  font-size: $fs-1;
+               }
+            }
+         }
+      }
+
+
    }
 
    .about_me {

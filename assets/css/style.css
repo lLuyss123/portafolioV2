@@ -174,6 +174,45 @@ main nav ol li.active {
   color: #3b82f6;
   font-weight: bold;
 }
+main .proyects {
+  padding: 15px;
+}
+main .proyects .all_proyects {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+  align-self: center;
+}
+main .proyects .all_proyects figure {
+  padding: 10px;
+  padding-top: 30px;
+  background: #292929;
+  border-radius: 10px;
+  height: 120px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  color: white;
+}
+main .proyects .all_proyects figure img {
+  height: auto;
+  width: 40px;
+  height: 40;
+  object-fit: contain;
+}
+main .proyects .all_proyects figure article {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .proyects .all_proyects figure article h2 {
+  font-size: 1.1rem;
+}
+main .proyects .all_proyects figure article p {
+  font-size: 0.7rem;
+}
 main .about_me {
   display: none;
   width: 100%;
