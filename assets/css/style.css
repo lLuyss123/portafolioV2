@@ -19,7 +19,7 @@ body {
 
 aside {
   position: sticky;
-  width: 18%;
+  width: 275px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@ aside {
   overflow: hidden;
   padding: 30px;
   padding-top: 60px;
-  background: #292929;
+  background: #1e1e1f;
 }
 aside .info_me {
   width: 100%;
@@ -74,18 +74,281 @@ aside .info_me .info_me_2 p {
   color: white;
 }
 aside .side_bar {
+  padding-top: 10px;
   width: 100%;
   border-top: solid 1px #383838;
 }
-aside .side_bar i {
+aside .side_bar .email {
+  display: flex;
+  justify-content: space-between;
+}
+aside .side_bar .email i {
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  position: relative;
+  text-align: center;
+  align-content: center;
+  background: #202022;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
   color: #3b82f6;
+}
+aside .side_bar .email i::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  content: "";
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #404040 0%, rgba(64, 64, 64, 0) 50%);
+  z-index: -1;
+  border-radius: 10px;
+}
+aside .side_bar .email .content_email {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+aside .side_bar .email .content_email p:nth-child(1) {
+  color: #383838;
 }
 
 main {
-  padding: 30px;
   flex: 1;
   border: 1px solid #383838;
   border-radius: 20px;
+  background: #1e1e1f;
+  width: 625px;
+  overflow: hidden;
+  position: relative;
+}
+main header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main header h2 {
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  left: 2%;
+  color: white;
+}
+main span {
+  position: relative;
+  width: 10%;
+}
+main span::before {
+  content: "";
+  min-width: 40px;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 20%;
+  background: linear-gradient(110deg, #60a5fa, #3b82f6);
+  border-radius: 3px;
+}
+main nav {
+  width: 100%;
+  padding-left: 60%;
+}
+main nav ol {
+  border-radius: 0 0 0 15px;
+  background: linear-gradient(120deg, #404040 3%, #303030 97%);
+  padding: 20px;
+  padding-left: 40px;
+  font-size: 1.1rem;
+  display: flex;
+  gap: 50px;
+}
+main nav ol li {
+  color: white;
+}
+main nav ol li:hover {
+  cursor: pointer;
+}
+main nav ol li.active {
+  color: #3b82f6;
+  font-weight: bold;
+}
+main .about_me {
+  display: none;
+  min-width: 625px;
+  width: auto;
+  padding: 15px;
+}
+main .about_me p {
+  width: auto;
+  color: #838383;
+  font-size: 0.9rem;
+}
+main .about_me.active {
+  display: block;
+}
+main .pets {
+  display: none;
+  width: 625px;
+}
+main .pets figure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .pets figure img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .pets.active {
+  display: block;
+}
+
+@media (max-width: 1180px) {
+  body {
+    margin: 32px 28px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  aside {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 32px;
+  }
+  aside .info_me {
+    height: auto;
+    gap: 16px;
+  }
+  aside .info_me figure {
+    width: min(220px, 42%);
+  }
+  aside .side_bar {
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+  aside .side_bar .email {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  aside .side_bar .email .content_email {
+    align-items: flex-start;
+  }
+  main {
+    width: 100%;
+    overflow: visible;
+  }
+  main nav {
+    padding-left: 0;
+  }
+  main nav ol {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 18px 24px;
+    border-radius: 0 0 18px 18px;
+  }
+  main header {
+    display: block;
+    padding: 28px 24px 0;
+  }
+  main header h2 {
+    position: static;
+  }
+  main span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-top: 10px;
+  }
+  main span::before {
+    top: 0;
+    left: 0;
+  }
+  main .about_me {
+    padding: 24px;
+  }
+  main .about_me p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    margin: 16px;
+    gap: 16px;
+  }
+  aside {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+  aside .info_me figure {
+    width: min(180px, 56%);
+  }
+  aside .info_me .info_me_2 h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+  aside .info_me .info_me_2 p {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+  aside .side_bar .email {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  aside .side_bar .email i {
+    flex-shrink: 0;
+  }
+  aside .side_bar .email .content_email {
+    min-width: 0;
+  }
+  aside .side_bar .email .content_email p {
+    overflow-wrap: anywhere;
+  }
+  main {
+    border-radius: 18px;
+  }
+  main nav ol {
+    gap: 16px;
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+  main header {
+    padding: 24px 18px 0;
+  }
+  main header h2 {
+    font-size: 1.7rem;
+  }
+  main .about_me {
+    padding: 20px 18px 24px;
+  }
+  main .about_me p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    margin: 12px;
+  }
+  aside {
+    padding: 18px 14px;
+  }
+  aside .info_me figure {
+    width: min(160px, 62%);
+  }
+  main nav ol {
+    justify-content: center;
+  }
+  main header h2 {
+    font-size: 1.45rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
