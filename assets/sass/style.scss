@@ -141,6 +141,7 @@ aside {
 }
 
 main {
+   overflow-y: scroll;
    flex: 1;
    border: 1px solid $jet;
    border-radius: 20px;
@@ -281,8 +282,13 @@ main {
    }
 
    .proyects {
+      display: none;
       padding: 10px;
       color: white;
+
+      &.active {
+         display: block;
+      }
 
       figure {
          background: $fondo-cards2;
@@ -300,6 +306,11 @@ main {
    .contacts {
       padding: 10px;
       color: white;
+      display: none;
+
+      &.active {
+         display: block;
+      }
 
       form {
          background: $glass-bg;
