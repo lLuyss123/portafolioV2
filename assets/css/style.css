@@ -176,8 +176,7 @@ main nav ol li.active {
 }
 main .about_me {
   display: none;
-  max-width: 625px;
-  width: auto;
+  width: 100%;
   padding: 15px;
 }
 main .about_me p {
@@ -190,14 +189,17 @@ main .about_me.active {
 main .pets {
   padding: 15px;
   display: none;
-  max-width: 625px;
-  width: auto;
+  width: 100%;
 }
 main .pets figure {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 main .pets figure img {
+  background: linear-gradient(120deg, #404040 3%, #303030 97%);
+  border-radius: 20px;
+  padding: 10px;
   display: block;
   max-width: 100%;
   width: 100%;

@@ -207,8 +207,7 @@ main {
 
    .about_me {
       display: none;
-      max-width: 625px;
-      width: auto;
+      width: 100%;
       padding: 15px;
 
       p {
@@ -224,14 +223,17 @@ main {
    .pets {
       padding: 15px;
       display: none;
-      max-width: 625px;
-      width: auto;
+      width: 100%;
 
       figure {
          display: grid;
          grid-template-columns: repeat(3, 1fr);
+         gap: 20px;
 
          img {
+            background: $fondo-del-fondo-negro;
+            border-radius: 20px;
+            padding: 10px;
             display: block;
             max-width: 100%;
             width: 100%;
