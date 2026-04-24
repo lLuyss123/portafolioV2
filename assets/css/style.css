@@ -116,7 +116,6 @@ aside .side_bar .email .content_email p:nth-child(1) {
 }
 
 main {
-  overflow-y: scroll;
   flex: 1;
   border: 1px solid #383838;
   border-radius: 20px;
@@ -124,6 +123,8 @@ main {
   width: 625px;
   overflow: hidden;
   position: relative;
+  max-height: calc(100vh - 110px);
+  overflow-y: scroll;
 }
 main header {
   width: 100%;

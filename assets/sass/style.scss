@@ -141,7 +141,7 @@ aside {
 }
 
 main {
-   overflow-y: scroll;
+   
    flex: 1;
    border: 1px solid $jet;
    border-radius: 20px;
@@ -149,6 +149,8 @@ main {
    width: 625px;
    overflow: hidden;
    position: relative;
+   max-height: calc(100vh - 110px);
+   overflow-y: scroll;
 
    header {
       width: 100%;
