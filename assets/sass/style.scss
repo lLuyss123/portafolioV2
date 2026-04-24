@@ -209,6 +209,7 @@ main {
 
    .proyects {
       display: none;
+      color: white;
 
       &.active {
          display: block;
@@ -234,7 +235,6 @@ main {
             display: flex;
             align-items: flex-start;
             gap: 15px;
-            color: white;
             box-shadow: $shadow-2;
             position: relative;
             z-index: 1;

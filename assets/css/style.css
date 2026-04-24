@@ -176,6 +176,7 @@ main nav ol li.active {
 }
 main .proyects {
   display: none;
+  color: white;
 }
 main .proyects.active {
   display: block;
@@ -200,7 +201,6 @@ main .proyects .all_proyects figure {
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  color: white;
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 1;
