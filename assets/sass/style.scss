@@ -3,231 +3,245 @@
 
 //https://codewithsadee.github.io/vcard-personal-portfolio/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
 }
 
 body {
-  //////// ↑    →    ↓    ←
-  margin: 70px 250px 40px 250px;
-  min-height: 100vh;
-  max-width: 100%;
-  background-color: $fondo-principal;
-  color: wheat;
-  font-family: $ff-poppins;
-  display: flex;
-  gap: 50px;
+   //////// ↑    →    ↓    ←
+   margin: 70px 250px 40px 250px;
+   min-height: 100vh;
+   max-width: 100%;
+   background-color: $fondo-principal;
+   color: wheat;
+   font-family: $ff-poppins;
+   display: flex;
+   gap: 50px;
 }
 
 aside {
-  position: sticky;
-  width: 275px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid $jet;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 30px;
-  padding-top: 60px;
-  background: #1e1e1f;
+   position: sticky;
+   width: 275px;
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid $jet;
+   border-radius: 20px;
+   overflow: hidden;
+   padding: 30px;
+   padding-top: 60px;
+   background: #1e1e1f;
 
-  .info_me {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    figure {
-      border-radius: 20px;
-      background: $fondo-del-fondo-negro;
-      width: 50%;
+   .info_me {
+      width: 100%;
+      height: 250px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      img {
-        display: block;
-        max-width: 100%;
-        height: 100%;
-      }
-    }
+      figure {
+         border-radius: 20px;
+         background: $fondo-del-fondo-negro;
+         width: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
 
-    .info_me_2 {
-      padding-top: 15px;
-      text-align: center;
-
-      h1 {
-        font-size: $fs-3;
-        padding-bottom: 5px;
-
-        span {
-          color: transparent;
-          background: $blue;
-          background-clip: text;
-        }
+         img {
+            display: block;
+            max-width: 100%;
+            height: 100%;
+         }
       }
 
-      p {
-        display: inline;
-        padding: 6px;
-        background-color: $jet;
-        border-radius: 20px;
-        text-align: center;
-        font-size: $fs-1;
-        color: white;
-      }
-    }
-  }
+      .info_me_2 {
+         padding-top: 15px;
+         text-align: center;
 
-  .side_bar {
-    padding-top: 10px;
-    width: 100%;
-    border-top: solid 1px $jet;
+         h1 {
+            font-size: $fs-3;
+            padding-bottom: 5px;
 
-    .email {
-      display: flex;
-      justify-content: space-between;
-      i {
-        box-shadow: $shadow-4;
-        position: relative;
-        text-align: center;
-        align-content: center;
-        background: $eerie-black-1;
-        border-radius: 10px;
-        width: 48px;
-        height: 48px;
-        object-fit: cover;
-        color: $primary-blue;
-        &::before {
-          position: absolute;
-          top: -1px;
-          left: -1px;
-          content: "";
-          width: 48px;
-          height: 48px;
-          background: $border-gradient-onyx;
-          z-index: -1;
-          border-radius: 10px;
-        }
-      }
+            span {
+               color: transparent;
+               background: $blue;
+               background-clip: text;
+            }
+         }
 
-      .content_email {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        p {
-          &:nth-child(1) {
-            color: $jet;
-          }
-        }
+         p {
+
+            display: inline;
+            padding: 6px;
+            background-color: $jet;
+            border-radius: 20px;
+            text-align: center;
+            font-size: $fs-1;
+            color: white;
+         }
       }
-    }
-  }
+   }
+
+   .side_bar {
+      padding-top: 10px;
+      width: 100%;
+      border-top: solid 1px $jet;
+
+      .email {
+         display: flex;
+         justify-content: space-between;
+
+         i {
+            box-shadow: $shadow-4;
+            position: relative;
+            text-align: center;
+            align-content: center;
+            background: $eerie-black-1;
+            border-radius: 10px;
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            color: $primary-blue;
+
+            &::before {
+               position: absolute;
+               top: -1px;
+               left: -1px;
+               content: "";
+               width: 48px;
+               height: 48px;
+               background: $border-gradient-onyx;
+               z-index: -1;
+               border-radius: 10px;
+            }
+         }
+
+         .content_email {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+               &:nth-child(1) {
+                  color: $jet;
+               }
+            }
+         }
+      }
+   }
 }
 
 main {
-  flex: 1;
-  border: 1px solid $jet;
-  border-radius: 20px;
-  background: #1e1e1f;
-  width: 625px;
-  overflow: hidden;
-  position: relative;
-  header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    h2 {
-      font-size: $fs-3;
-      position: absolute;
-      top: 20px;
-      left: 2%;
-      color: white;
-    }
-  }
-  span {
-    position: relative;
-    width: 10%;
-    &::before {
-      content: "";
-      min-width: 40px;
-      width: 40px;
-      height: 5px;
-      position: absolute;
-      top: 5px;
-      left: 20%;
-      background: $text-gradient-blue;
-      border-radius: 3px;
-    }
-  }
-  nav {
-    width: 100%;
-    padding-left: 60%;
+   flex: 1;
+   border: 1px solid $jet;
+   border-radius: 20px;
+   background: #1e1e1f;
+   width: 625px;
+   overflow: hidden;
+   position: relative;
 
-    ol {
-      border-radius: 0 0 0 15px;
-      background: $fondo-del-fondo-negro;
-
-      padding: 20px;
-      padding-left: 40px;
-      font-size: $fs-2;
+   header {
+      width: 100%;
       display: flex;
-      gap: 50px;
-      li {
-        color: white;
-        &:hover {
-          cursor: pointer;
-        }
-        &.active {
-          color: $primary-blue;
-          font-weight: bold;
-        }
-      }
-    }
-  }
+      justify-content: space-between;
 
-  .about_me {
-    display: none;
-    min-width: 625px;
-    width: auto;
-    padding: 15px;
-    p {  
+      h2 {
+         font-size: $fs-3;
+         position: absolute;
+         top: 20px;
+         left: 2%;
+         color: white;
+      }
+   }
+
+   span {
+      position: relative;
+      width: 10%;
+
+      &::before {
+         content: "";
+         min-width: 40px;
+         width: 40px;
+         height: 5px;
+         position: absolute;
+         top: 5px;
+         left: 20%;
+         background: $text-gradient-blue;
+         border-radius: 3px;
+      }
+   }
+
+   nav {
+      width: 100%;
+      padding-left: 60%;
+
+      ol {
+         border-radius: 0 0 0 15px;
+         background: $fondo-del-fondo-negro;
+
+         padding: 20px;
+         padding-left: 40px;
+         font-size: $fs-2;
+         display: flex;
+         gap: 50px;
+
+         li {
+            color: white;
+
+            &:hover {
+               cursor: pointer;
+            }
+
+            &.active {
+               color: $primary-blue;
+               font-weight: bold;
+            }
+         }
+      }
+   }
+
+   .about_me {
+      display: none;
+      max-width: 625px;
       width: auto;
-      color: $white-2;
-      font-size: $fs-1-2;
-     }
+      padding: 15px;
 
-     &.active{
-      display: block;
-     }
-  }
-
-  .pets{
-    display: none;
-    width: 625px;
-    figure{
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      img {
-        display: block;
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+      p {
+         color: $white-2;
+         font-size: $fs-1-2;
       }
-    }
-    
-  &.active{
-    display: block;
-  }
-  }
+
+      &.active {
+         display: block;
+      }
+   }
+
+   .pets {
+      display: none;
+      width: 625px;
+
+      figure {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+
+         img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+         }
+      }
+
+      &.active {
+         display: block;
+      }
+   }
 }
 
 @include meta.load-css("responsive");

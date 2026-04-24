@@ -176,12 +176,11 @@ main nav ol li.active {
 }
 main .about_me {
   display: none;
-  min-width: 625px;
+  max-width: 625px;
   width: auto;
   padding: 15px;
 }
 main .about_me p {
-  width: auto;
   color: #838383;
   font-size: 0.9rem;
 }
