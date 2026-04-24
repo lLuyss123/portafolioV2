@@ -233,6 +233,10 @@ main .about2 .all_about2 figure article h2 {
 main .about2 .all_about2 figure article p {
   font-size: 0.7rem;
 }
+main .proyects {
+  padding: 10px;
+  color: white;
+}
 main .about_me {
   display: none;
   width: 100%;
